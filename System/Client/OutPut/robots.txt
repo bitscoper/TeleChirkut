@@ -1,0 +1,3 @@
+Sitemap: https://telechirkut.bitscoper.dev/sitemap.xml
+User-Agent: *
+Disallow: /Client_Includings

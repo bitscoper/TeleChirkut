@@ -1,0 +1,217 @@
+/* By Abdullah As-Sadeed */
+
+#users_messages_form_container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow-y: auto;
+  border-bottom: 1px solid var(--back-light);
+}
+
+#messages_connections {
+  overflow-y: auto;
+  text-align: center;
+  min-width: 50px;
+  background-color: var(--back-light);
+  white-space: nowrap;
+}
+
+.messages_connection {
+  display: block;
+  padding: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.messages_active_connection {
+  background-color: var(--back-dark);
+}
+
+.messages_connection:last-of-type {
+  margin-bottom: 50px;
+}
+
+.messages_connection_face {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: none;
+  vertical-align: middle;
+}
+
+.messages_connection_unseen_count {
+  padding: 3px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  color: var(--white);
+  font-size: xx-small;
+  font-weight: bold;
+  min-width: 16px;
+  border-radius: 50%;
+}
+
+.messages_full_name {
+  display: none;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+.messages_connection:hover .messages_full_name,
+.messages_connection:focus .messages_full_name {
+  color: var(--blue);
+}
+
+#messages_form_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 10px 30px 10px;
+}
+
+.message {
+  display: flex;
+  margin: 30px 0;
+  height: auto;
+  text-align: left;
+}
+
+.message_sender_face {
+  display: block;
+  order: 1;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.message_box:before {
+  position: relative;
+  float: left;
+  content: "";
+  margin: 5px 0 0 -8px;
+  border-style: solid;
+  border-width: 8px 8px 8px 0;
+  border-color: transparent var(--blue-light) transparent transparent;
+}
+
+.message_column_box {
+  flex: 1;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 8px;
+}
+
+.message_body {
+  display: inline-block;
+  background-color: var(--blue-light);
+  width: auto;
+  padding: 10px;
+  word-wrap: break-word;
+  border-radius: 5px;
+}
+
+.image_message {
+  max-height: 256px;
+  max-width: 128px;
+  cursor: pointer;
+}
+
+.sent_date_time {
+  font-size: xx-small;
+  padding: 1px 0 0 5px;
+}
+
+.my_message .sent_date_time {
+  text-align: right;
+  padding: 1px 5px 0 0;
+}
+
+.my_message .message_sender_face {
+  order: 2;
+}
+
+.my_message .message_box:before {
+  position: relative;
+  float: right;
+  content: "";
+  margin: 5px -8px 0 0;
+  border-style: solid;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent var(--back-dark);
+}
+
+.my_message .message_column_box {
+  order: 1;
+  padding: 0 8px 0 0;
+}
+
+.my_message .message_body {
+  float: right;
+  background-color: var(--back-dark);
+  padding: 5px 5px 5px 10px;
+}
+
+#to_unseen_count {
+  text-align: center;
+  font-size: 12px;
+  margin: 30px 0 0 0;
+}
+
+#text_message_form {
+  text-align: center;
+  background-color: var(--back-dark);
+}
+
+#image_chooser_text_message_send_cointainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 10px;
+}
+
+#text_message_form label {
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+#text_message_form img {
+  height: 28px;
+  vertical-align: middle;
+}
+
+#text_message_send_cointainer {
+  flex: 1;
+  display: inline-flex;
+  flex-direction: row;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+#text_message_form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-top: 1px solid var(--back-dark);
+  border-right: none;
+  border-bottom: 1px solid var(--back-dark);
+  border-left: 1px solid var(--back-dark);
+}
+
+#text_message_form input[type="text"]:hover,
+#text_message_form input[type="text"]:focus {
+  border-top: 1px solid var(--blue-light);
+  border-bottom: 1px solid var(--blue-light);
+  border-left: 1px solid var(--blue-light);
+}
+
+#text_message_form input[type="image"] {
+  border-radius: 0;
+  padding: 10px;
+}

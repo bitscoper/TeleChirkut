@@ -1,0 +1,61 @@
+/* By Abdullah As-Sadeed */
+
+#menu {
+  display: none;
+  width: 192px;
+  border-bottom-left-radius: 8px;
+  box-shadow: -0.1em 0.1em 0.2em 0.1em rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  position: fixed;
+  top: 44px;
+  right: 0;
+  z-index: 1;
+}
+
+.menu_items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.menu_item_icons {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+#menu_profile_icon img {
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+}
+
+#menu_profile_icon:hover,
+#menu_profile_icon:focus {
+  filter: none !important;
+}
+
+#menu_profile_icon:hover span,
+#menu_profile_icon:focus span {
+  filter: var(--blue-dark-filter);
+}
+
+.menu_item_spans {
+  flex: 1;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.menu_items:hover,
+.menu_items:focus {
+  filter: var(--blue-dark-filter);
+}
+
+#menu hr {
+  height: 1px;
+  border: 0;
+  background-color: var(--back-light);
+  color: var(--back-light);
+}
