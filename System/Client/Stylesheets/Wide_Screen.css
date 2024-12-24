@@ -1,0 +1,81 @@
+/* By Abdullah As-Sadeed */
+
+@media screen and (min-width: 641px) {
+  #rules_page {
+    padding: 0 30px 50px 30px;
+  }
+
+  #header_icons {
+    width: 400px;
+  }
+
+  #registered_header_item_title {
+    display: flex;
+    flex: 1;
+    padding: 0 0 0 20px;
+  }
+
+  .post_creation_button {
+    right: 30px;
+    bottom: 30px;
+  }
+
+  @keyframes post_creation_button_animation {
+    from {
+      box-shadow: 0 0 0 0 var(--blue-light);
+    }
+
+    to {
+      box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+  }
+
+  .post_form {
+    width: 512px;
+  }
+
+  .post {
+    width: 512px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+    vertical-align: middle;
+  }
+
+  .post_reaction {
+    height: 40px !important;
+  }
+
+  #messages_connections {
+    text-align: left;
+  }
+
+  .messages_connection {
+    padding: 15px 5px 15px 10px;
+  }
+
+  .messages_full_name {
+    display: inline-block;
+  }
+
+  .notification {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .notification_date_time {
+    padding: 5px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1064px) {
+  #feedline {
+    columns: 2;
+  }
+}
+
+@media screen and (min-width: 1596px) {
+  #feedline {
+    columns: 3;
+  }
+}

@@ -1,0 +1,61 @@
+/* By Abdullah As-Sadeed */
+
+@keyframes initialization_spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes initialization_logo {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes waiting_1 {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+
+  60%,
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@keyframes waiting_2 {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+
+  60%,
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+
+@keyframes post_creation_button_animation {
+  from {
+    box-shadow: 0 0 0 0 var(--blue-light);
+  }
+
+  to {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes post_loading {
+  50% {
+    background-color: var(--back-light);
+  }
+}

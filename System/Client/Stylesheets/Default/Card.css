@@ -1,0 +1,43 @@
+/* By Abdullah As-Sadeed */
+
+.card {
+  width: 150px;
+  position: relative;
+  border: 1px solid var(--back-light);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 3px, rgba(0, 0, 0, 0.12) 0px 1px 2px;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card_face_logo {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.card_full_name {
+  display: block;
+  transition: color 0.5s;
+}
+
+.card:hover .card_full_name,
+.card:focus .card_full_name {
+  color: var(--blue);
+}
+
+.card_profile_code_verification_container {
+  display: block;
+  font-size: smaller;
+  color: var(--black-hover);
+  padding: 10px 0 0 0;
+}
+
+.card_timezone {
+  display: block;
+  font-size: x-small;
+  color: var(--black-hover);
+  padding: 0 0 10px 0;
+}

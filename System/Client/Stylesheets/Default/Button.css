@@ -1,0 +1,35 @@
+/* By Abdullah As-Sadeed */
+
+.button {
+  display: inline-block;
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--blue-dark);
+}
+
+.button_light {
+  display: inline-block;
+  background-color: var(--back-dark);
+  color: var(--blue);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.button_light:hover,
+.button_light:focus {
+  color: var(--blue-dark);
+}

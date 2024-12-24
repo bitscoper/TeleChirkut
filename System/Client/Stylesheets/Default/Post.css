@@ -1,0 +1,235 @@
+/* By Abdullah As-Sadeed */
+
+.post {
+  width: 100%;
+  border-top: 1px solid var(--back-light);
+  border-bottom: 1px solid var(--back-light);
+  border-right: none;
+  border-left: none;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 3px, rgba(0, 0, 0, 0.12) 0px 1px 2px;
+  background-color: var(--white);
+  padding: 7px 0 0 0;
+  text-align: left;
+  display: inline-block;
+  margin-top: 20px;
+  transition: opacity 0.5s;
+}
+
+.post:hover,
+.post:focus {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.post[data-loading="not_requested"],
+.post[data-loading="loading"] {
+  height: 192px;
+  background-color: var(--back-dark);
+}
+
+.post[data-loading="not_requested"],
+.post[data-loading="loading"] {
+  animation: post_loading 1.2s infinite;
+}
+
+.post_profile_link_more_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.post_profile_link {
+  flex: 1;
+}
+
+.post_more_container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.post_more_icon {
+  cursor: pointer;
+  margin: 0 10px 0 0;
+}
+
+.post_more_menu {
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  right: 100%;
+  background-color: var(--overlap);
+  border-radius: 5px;
+  color: var(--white);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.post_more_menu .post_more_menu_item::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin: -5px 0 0 0;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--overlap);
+}
+
+.post_more_menu_item {
+  display: block;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.post_more_menu_item:hover,
+.post_more_menu_item:focus {
+  background-color: var(--black-hover);
+}
+
+.post_face_logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0 5px 0 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.post_full_name_profile_code_verification_container {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0.8;
+}
+
+.post_full_name {
+  color: var(--black);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post_profile_link:hover .post_full_name,
+.post_profile_link:focus .post_full_name {
+  color: var(--blue);
+}
+
+.post_profile_code_verification {
+  font-size: x-small;
+  color: var(--black);
+}
+
+.post_text {
+  line-height: 1.6;
+  display: block;
+  padding: 10px 10px 0 10px;
+  white-space: pre-wrap;
+}
+
+.post_text a {
+  color: var(--blue);
+}
+
+.post_text a:hover,
+.post_text a:focus {
+  color: var(--blue-dark);
+}
+
+.post_image {
+  width: 100%;
+  margin: 5px 0 0 0;
+  cursor: pointer;
+}
+
+.post_image[data-loading="not_loaded"] {
+  display: inline-block;
+  height: 192px;
+  background-color: var(--back-dark);
+}
+
+.post_image[data-loading="not_loaded"] {
+  animation: post_loading 1.2s infinite;
+}
+
+.post_image[data-loading="loaded"] {
+  opacity: 0;
+}
+
+.post:last-of-type {
+  margin-bottom: 50px;
+}
+
+.post_counts_date_time_container {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 10px 7px 10px;
+}
+
+.post_reactions_count {
+  flex: 1;
+  display: inline-block;
+  text-align: left;
+  font-size: 12px;
+}
+
+.post_date_time {
+  flex: 1;
+  display: inline-block;
+  text-align: right;
+  font-size: 12px;
+}
+
+.post_footer {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  border-top: 1px solid var(--back-light);
+}
+
+.post_footer_items {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 10px 0 10px 0;
+}
+
+.post_footer_items img {
+  height: 24px;
+  cursor: pointer;
+}
+
+.post_reactions_container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  left: 5px;
+  height: 40px;
+  width: max-content;
+  background-color: var(--back-light);
+  border-radius: 32px;
+}
+
+.post_reaction {
+  height: 32px !important;
+  cursor: pointer;
+  margin: 4px;
+  transition: height 0.2s;
+}
+
+.post_reaction:hover,
+.post_reaction:focus {
+  height: 56px !important;
+}
+
+.post_details_icon_container {
+  cursor: pointer;
+}
+
+.post_details_icon_container:hover span,
+.post_details_icon_container:focus span {
+  color: var(--blue-dark);
+}

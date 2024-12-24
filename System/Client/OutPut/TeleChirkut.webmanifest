@@ -1,0 +1,186 @@
+{
+  "background_color": "#FFFFFF",
+  "categories": ["social", "social networking", "network", "networking"],
+  "description": "A network for a better world",
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay"],
+  "edge_side_panel": {
+    "preferred_width": 376
+  },
+  "handle_links": "preferred",
+  "iarc_rating_id": "97a1bcbf-5c33-464c-ab72-346ddc91395a",
+  "icons": [
+    {
+      "src": "/Client_Includings/TeleChirkut_Maskable_48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_Maskable_72.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_Maskable_96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_Maskable_128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_Maskable_192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_Maskable_384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_Maskable_512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_48.png",
+      "type": "image/png",
+      "sizes": "48x48",
+      "purpose": "any"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_72.png",
+      "type": "image/png",
+      "sizes": "72x72",
+      "purpose": "any"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "any"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "any"
+    },
+    {
+      "src": "/Client_Includings/TeleChirkut_512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "id": "/",
+  "lang": "en",
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
+  "name": "TeleChirkut",
+  "orientation": "portrait",
+  "prefer_related_applications": true,
+  "protocol_handlers": [
+    {
+      "protocol": "web+telechirkut",
+      "url": "/#%s"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=xyz.telechirkut.pwa",
+      "id": "xyz.telechirkut.pwa"
+    },
+    {
+      "platform": "windows",
+      "url": "https://www.microsoft.com/store/apps/9P8VZN45VV94",
+      "id": "9P8VZN45VV94"
+    },
+    {
+      "platform": "amazon",
+      "url": "https://www.amazon.com/gp/product/B09QK3N833",
+      "id": "B09QK3N833"
+    }
+  ],
+  "scope": "/",
+  "scope_extensions": [
+    {
+      "origin": "telechirkut.bitscoper.dev"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/Client_Includings/ScreenShot.jpeg",
+      "type": "image/jpeg",
+      "sizes": "540x720",
+      "label": "A network for a better world"
+    }
+  ],
+  "short_name": "TeleChirkut",
+  "shortcuts": [
+    {
+      "name": "Messages",
+      "short_name": "Messages",
+      "url": "/#messages",
+      "icons": [
+        {
+          "src": "/Client_Includings/Messages_ShortCut.png",
+          "type": "image/png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Notifications",
+      "short_name": "Notifications",
+      "url": "/#notifications",
+      "icons": [
+        {
+          "src": "/Client_Includings/Notifications_ShortCut.png",
+          "type": "image/png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "TeleChirkut Rules",
+      "short_name": "Rules",
+      "description": "Read the TeleChirkut Rules carefully!",
+      "url": "/rules",
+      "icons": [
+        {
+          "src": "/Client_Includings/Rules_ShortCut.png",
+          "type": "image/png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#424242"
+}

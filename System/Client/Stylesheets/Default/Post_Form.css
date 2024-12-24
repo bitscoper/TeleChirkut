@@ -1,0 +1,91 @@
+/* By Abdullah As-Sadeed */
+
+.post_creation_button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: var(--white);
+  font-weight: bold;
+  position: fixed;
+  right: 15px;
+  bottom: 20px;
+  cursor: pointer;
+  animation: post_creation_button_animation 1.6s infinite;
+}
+
+.post_creation_button:hover,
+.post_creation_button:focus {
+  background-color: var(--blue-dark);
+}
+
+.post_form {
+  width: 300px;
+  background-color: var(--white);
+  text-align: center;
+  display: inline-block;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 5px 0 0 0;
+}
+
+.post_form textarea {
+  height: 150px;
+  width: 100%;
+  border: none;
+  padding: 10px 15px 15px 15px;
+  resize: vertical;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.post_form textarea:hover,
+.post_form textarea:focus {
+  border: none;
+}
+
+.post_image_selector {
+  font-weight: bold;
+  display: inline-block;
+  margin: 15px;
+  cursor: pointer;
+  color: var(--blue);
+}
+
+.post_image_selector img {
+  max-height: 128px;
+}
+
+.post_image_selector:hover,
+.post_image_selector:focus {
+  color: var(--blue-dark);
+}
+
+.post_form_footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.post_form_footer .button,
+.post_form_footer .button_light {
+  border-radius: 0;
+  flex: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post_form_footer .button {
+  border-bottom-left-radius: 5px;
+}
+
+.post_form_footer .button_light {
+  border-bottom-right-radius: 5px;
+}

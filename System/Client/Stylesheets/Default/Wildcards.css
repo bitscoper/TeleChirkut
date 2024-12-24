@@ -1,0 +1,19 @@
+/* By Abdullah As-Sadeed */
+
+* {
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  font-family: "Varela Round", sans-serif;
+  font-size: 14px;
+}
+
+::selection {
+  background-color: var(--blue-light);
+}
+
+::-moz-selection {
+  background-color: var(--blue-light);
+}

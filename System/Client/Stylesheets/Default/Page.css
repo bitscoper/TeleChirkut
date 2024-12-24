@@ -1,0 +1,7 @@
+/* By Abdullah As-Sadeed */
+
+.page {
+  display: none;
+  overflow-y: auto;
+  flex: 1;
+}

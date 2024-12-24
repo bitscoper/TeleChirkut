@@ -1,0 +1,87 @@
+/* By Abdullah As-Sadeed */
+
+#log_in_form {
+  background-color: var(--white);
+  width: 320px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  padding: 32px 0 0 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#log_in_form h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+#log_in_form #fields {
+  padding: 16px 24px 32px 24px;
+  display: block;
+}
+
+#log_in_form .field {
+  padding: 10px;
+  display: block;
+}
+
+#log_in_form input {
+  width: 100%;
+}
+
+#log_in_form #password_recovery {
+  display: inline-block;
+  color: var(--black-hover);
+  cursor: pointer;
+}
+
+#log_in_form #password_recovery:hover,
+#log_in_form #password_recovery:focus {
+  color: var(--blue-dark);
+}
+
+#log_in_form #actions {
+  display: flex;
+  flex-direction: row;
+}
+
+#log_in_form #actions input,
+#log_in_form #actions span {
+  width: 100%;
+  border: none;
+  padding: 15px 5px 15px 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#log_in_form #actions span {
+  background-color: var(--back-dark);
+  color: var(--blue);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 0;
+}
+
+#log_in_form #actions span:hover,
+#log_in_form #actions span:focus {
+  color: var(--blue-dark);
+}
+
+#log_in_form #actions input {
+  background-color: var(--blue);
+  color: var(--white);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 5px;
+}
+
+#log_in_form #actions input:hover,
+#log_in_form #actions input:focus {
+  background-color: var(--blue-dark);
+}
