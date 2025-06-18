@@ -1,7 +1,7 @@
 {
   "background_color": "#FFFFFF",
   "categories": ["social", "social networking", "network", "networking"],
-  "description": "A network for a better world",
+  "description": "A social network, built from scratch, for a better world",
   "dir": "ltr",
   "display": "standalone",
   "display_override": ["window-controls-overlay"],
@@ -138,7 +138,7 @@
       "src": "/Client_Includings/ScreenShot.jpeg",
       "type": "image/jpeg",
       "sizes": "540x720",
-      "label": "A network for a better world"
+      "label": "A social network, built from scratch, for a better world"
     }
   ],
   "short_name": "TeleChirkut",

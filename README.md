@@ -2,7 +2,7 @@
 
 # TeleChirkut
 
-A network for a better world
+A social network, built from scratch, for a better world
 
 <a href="https://telechirkut.bitscoper.dev/">telechirkut.bitscoper.dev</a>
 <br />

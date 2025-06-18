@@ -192,7 +192,7 @@ if($TeleChirkut) {
         }
     } else {
         if(!$registration) {
-            echo Generate_Page('TeleChirkut', 'A network for a better world', '', false, false, ''); /* home */
+            echo Generate_Page('TeleChirkut', 'A social network, built from scratch, for a better world', '', false, false, ''); /* home */
         } elseif($registration) {
             require_once $includings_path.'Manually_Required/Client_Page_Generator.php';
 
