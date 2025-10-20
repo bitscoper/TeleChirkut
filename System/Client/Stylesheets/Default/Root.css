@@ -1,0 +1,16 @@
+/* By Abdullah As-Sadeed */
+
+:root {
+  --blue: #1976d2;
+  --blue-light: #63a4ff;
+  --blue-dark: #004ba0;
+  --blue-dark-filter: invert(21%) sepia(43%) saturate(4594%) hue-rotate(201deg)
+    brightness(85%) contrast(101%);
+  --back-light: #f5f5f6;
+  --back-dark: #e1e2e1;
+  --white: #ffffff;
+  --black: rgba(0, 0, 0, 0.87);
+  --black-hover: #343434;
+  --red: #ff0000;
+  --overlap: rgba(0, 0, 0, 0.75);
+}

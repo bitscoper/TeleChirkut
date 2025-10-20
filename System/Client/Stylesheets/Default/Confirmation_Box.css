@@ -1,0 +1,56 @@
+/* By Abdullah As-Sadeed */
+
+.confirmation_box {
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.confirmation_box_title {
+  background-color: var(--blue-dark);
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.confirmation_box_message {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.confirmation_box input[type="text"] {
+  margin: 20px;
+}
+
+.confirmation_box input[type="password"] {
+  margin: 0 20px 15px 20px;
+}
+
+.confirmation_box_buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.confirmation_box_confirm_button_container,
+.confirmation_box_cancel_button_container {
+  flex: 1;
+}
+
+.confirmation_box_confirm_button_container span,
+.confirmation_box_confirm_button_container input[type="submit"],
+.confirmation_box_cancel_button_container span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  border-radius: 0;
+}
+
+.confirmation_box_confirm_button_container span {
+  border-bottom-left-radius: 5px;
+}
+
+.confirmation_box_cancel_button_container span {
+  border-bottom-right-radius: 5px;
+}

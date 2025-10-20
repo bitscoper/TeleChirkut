@@ -1,0 +1,15 @@
+/* By Abdullah As-Sadeed */
+
+#rules_page {
+  padding: 0 10px 50px 10px;
+  line-height: 1.6;
+}
+
+#rules_page a {
+  color: var(--blue);
+}
+
+#rules_page a:hover,
+#rules_page a:focus {
+  color: var(--blue-dark);
+}

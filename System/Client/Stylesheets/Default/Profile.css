@@ -1,0 +1,95 @@
+/* By Abdullah As-Sadeed */
+
+#profile_about {
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+}
+
+#profile_details_container {
+  display: inline-block;
+  vertical-align: middle;
+  margin: -10px 0 20px 0;
+}
+
+#profile_face_logo_container {
+  height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 20px 0;
+  border-style: solid;
+  border-color: var(--white);
+  box-shadow: 0 0 8px 3px #b8b8b8;
+  position: relative;
+}
+
+#profile_face_logo {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#edit_face_logo_icon {
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  border-radius: 50%;
+  padding: 4px;
+  height: 30px;
+  width: 30px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  box-shadow: 0 0 8px 3px #b8b8b8;
+  cursor: pointer;
+}
+
+.profile_details {
+  display: block;
+  text-align: left;
+  margin: 10px 0 0 20px;
+}
+
+.profile_details img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.profile_details span {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+#profile_note {
+  font-size: 12px;
+  color: var(--blue-dark);
+  margin: 0 0 5px 0;
+}
+
+#profile_introduction {
+  vertical-align: middle;
+}
+
+#edit_timezone_icon,
+#edit_introduction_icon {
+  vertical-align: middle;
+  margin: 0 0 0 10px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#profile_actions {
+  display: flex;
+  background-color: var(--back-light);
+  margin: 0 0 20px 0;
+}
+
+#profile_actions div {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
