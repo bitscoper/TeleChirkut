@@ -1,0 +1,10 @@
+/* By Abdullah As-Sadeed */
+
+.empty_flex {
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  padding: 10px;
+}

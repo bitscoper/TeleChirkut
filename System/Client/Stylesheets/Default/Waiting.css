@@ -1,0 +1,32 @@
+/* By Abdullah As-Sadeed */
+
+.waiting_container {
+  transform: translate(0%, 0%);
+  height: 4px;
+  overflow: hidden;
+  position: sticky;
+  --webkit-position: sticky;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.waiting:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--blue-light);
+  animation: waiting_1 2.1s cubic-bezier(0.65, 0.81, 0.73, 0.4) infinite;
+}
+
+.waiting:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--blue-light);
+  animation: waiting_2 2.1s cubic-bezier(0.16, 0.84, 0.44, 1) infinite;
+  animation-delay: 1.15s;
+}

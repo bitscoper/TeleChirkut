@@ -1,0 +1,16 @@
+/* By Abdullah As-Sadeed */
+
+#post_page .post_footer {
+  display: none;
+}
+
+#post_reacters_empty {
+  text-align: center;
+  font-size: 12px;
+  margin: 30px 20px 50px 20px;
+}
+
+#empty_reacted_posts {
+  font-size: 12px;
+  padding: 100px 20px 100px 20px;
+}
