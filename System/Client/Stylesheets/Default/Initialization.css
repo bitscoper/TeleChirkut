@@ -1,0 +1,31 @@
+/* By Abdullah As-Sadeed */
+
+#initialization_container {
+  height: 100%;
+  width: 100%;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: opacity 0.5s;
+}
+
+#initialization {
+  border: 8px solid transparent;
+  border-top: 8px solid var(--blue-light);
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: initialization_spin 1.2s linear infinite;
+}
+
+#initialization_icon {
+  animation: initialization_logo 1.2s linear infinite;
+}

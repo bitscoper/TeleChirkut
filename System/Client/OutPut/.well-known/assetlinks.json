@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "xyz.telechirkut.pwa",
+      "sha256_cert_fingerprints": [
+        "43:45:DF:82:0B:1C:0F:22:CE:78:F2:DF:53:29:2B:C2:64:24:DD:93:31:B1:AC:A9:67:62:F9:28:52:0D:6D:FF",
+        "69:7D:CF:E9:21:53:07:FF:EE:97:EC:9E:19:B9:88:8C:EC:39:72:B2:8E:3F:13:75:D6:24:1A:FA:07:32:56:C5"
+      ]
+    }
+  }
+]
