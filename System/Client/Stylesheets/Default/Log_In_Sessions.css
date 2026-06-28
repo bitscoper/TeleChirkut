@@ -1,0 +1,27 @@
+/* By Abdullah As-Sadeed */
+
+.log_in_sessions {
+  border-collapse: collapse;
+  border: 1px solid var(--back-dark);
+  background-color: var(--white);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+.log_in_sessions th,
+.log_in_sessions td {
+  border: 1px solid var(--back-dark);
+  padding: 5px 10px 5px 10px;
+}
+
+.log_in_sessions td {
+  border: 1px solid var(--back-dark);
+  padding: 3px 10px 3px 10px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.log_in_sessions:last-of-type {
+  margin-bottom: 50px;
+}

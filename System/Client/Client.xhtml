@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!-- By Abdullah As-Sadeed -->
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="https://telechirkut.bitscoper.dev/" />
+    <meta name="author" content="Abdullah As-Sadeed" />
+    <link rel="manifest" href="TeleChirkut.webmanifest" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="theme-color" content="rgb(66, 66, 66)" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="Client_Includings/TeleChirkut_192.png" />
+    <title>TeleChirkut</title>
+    <meta name="description" content="TeleChirkut" />
+    <meta name="keywords" content="TeleChirkut" />
+    <style></style>
+  </head>
+  <body lang="en-US" class="fixed_body">
+    <div id="initialization_container">
+      <div id="initialization">
+        <img
+          src="Client_Includings/TeleChirkut_48.png"
+          alt=""
+          id="initialization_icon"
+        />
+      </div>
+    </div>
+    <div id="client"></div>
+    <div id="container">
+      <div id="header">
+        <h3 id="registered_header_item_title">TeleChirkut</h3>
+        <div id="header_icons">
+          <span class="registered_header_items">
+            <img
+              id="feedline_icon"
+              title="FeedLine"
+              src="Client_Includings/FeedLine.gif"
+              alt=""
+            />
+          </span>
+          <span class="registered_header_items">
+            <img
+              src="Client_Includings/Messages.svg"
+              id="messages_icon"
+              title="Messages"
+              alt=""
+            />
+            <span id="header_unseen_messages_count"></span>
+          </span>
+          <span class="registered_header_items">
+            <img
+              src="Client_Includings/Notifications.svg"
+              id="notifications_icon"
+              title="Notifications"
+              alt=""
+            />
+            <span id="header_unseen_notifications_count"></span>
+          </span>
+          <span class="registered_header_items">
+            <img
+              src="Client_Includings/Users.svg"
+              id="explore_icon"
+              title="Explore"
+              alt=""
+            />
+          </span>
+          <span class="registered_header_items">
+            <img
+              src="Client_Includings/Menu.svg"
+              id="menu_icon"
+              title="Menu"
+              alt=""
+            />
+          </span>
+        </div>
+      </div>
+      <div id="menu">
+        <span id="menu_profile_icon" title="Profile" class="menu_items">
+          <img
+            class="menu_item_icons"
+            src="Client_Includings/Algorithming_White.svg"
+            alt=""
+          />
+          <span class="menu_item_spans">Profile</span>
+        </span>
+        <hr />
+        <span id="reactions_icon" title="Reacted Posts" class="menu_items">
+          <img
+            src="Client_Includings/Posts.svg"
+            class="menu_item_icons"
+            alt=""
+          />
+          <span class="menu_item_spans">Reacted Posts</span>
+        </span>
+        <span id="log_ins_icon" title="Log In Sessions" class="menu_items">
+          <img
+            class="menu_item_icons"
+            src="Client_Includings/Log_In_Sessions.svg"
+            alt=""
+          />
+          <span class="menu_item_spans">Log In Sessions</span>
+        </span>
+        <hr />
+        <span
+          title="Change Password"
+          class="menu_items"
+          id="change_password_icon"
+        >
+          <img
+            class="menu_item_icons"
+            src="Client_Includings/Change_PassWord.svg"
+            alt=""
+          />
+          <span class="menu_item_spans">Change Password</span>
+        </span>
+        <hr />
+        <span title="Log Out" id="log_out_icon" class="menu_items">
+          <img
+            class="menu_item_icons"
+            src="Client_Includings/Log_Out.svg"
+            alt=""
+          />
+          <span class="menu_item_spans">Log Out</span>
+        </span>
+        <hr />
+        <span
+          id="rules_icon"
+          title="Read the TeleChirkut Rules"
+          class="menu_items"
+        >
+          <img
+            class="menu_item_icons"
+            src="Client_Includings/Rules.svg"
+            alt=""
+          />
+          <span class="menu_item_spans">TeleChirkut Rules</span>
+        </span>
+      </div>
+      <div id="sub_header">
+        <h4></h4>
+      </div>
+      <div id="feedline_page" class="page dynamic"></div>
+      <div id="messages_page" class="page">
+        <div id="users_messages_form_container">
+          <div id="messages_connections" class="dynamic"></div>
+          <div id="messages_form_container">
+            <div id="messages" class="empty_flex dynamic">
+              Select a connection first
+            </div>
+            <form id="text_message_form">
+              <span id="image_chooser_text_message_send_cointainer">
+                <label title="Send An Image" for="image_message_selector">
+                  <img src="Client_Includings/Image_Message.svg" alt="" />
+                </label>
+                <span id="text_message_send_cointainer">
+                  <input
+                    type="text"
+                    name="text_message"
+                    placeholder="Write message ..."
+                    title="Write Message"
+                    autocomplete="off"
+                  />
+                  <input
+                    type="image"
+                    src="Client_Includings/Send.svg"
+                    class="button"
+                    title="Send The Text Message"
+                  />
+                </span>
+              </span>
+            </form>
+          </div>
+        </div>
+        <form id="image_message_form">
+          <input
+            type="file"
+            id="image_message_selector"
+            name="image"
+            accept="image/*"
+          />
+        </form>
+      </div>
+      <div id="notifications_page" class="page dynamic"></div>
+      <div id="users_page" class="page dynamic"></div>
+      <div id="profile_page" class="page dynamic"></div>
+      <div id="face_logo_editor_page" class="page">
+        <form id="face_logo_editor_form">
+          <input
+            type="file"
+            accept="image/*"
+            name="face_logo"
+            id="edit_face_logo_selector"
+          />
+          <div id="face_logo_editor"></div>
+          <div class="face_logo_editor_actions">
+            <label
+              class="button"
+              title="Upload Snap"
+              for="edit_face_logo_selector"
+              >Upload</label
+            >
+            <label
+              class="button"
+              title="Rotate By -90 Degree"
+              id="rotate_negative"
+              >↻</label
+            >
+            <label
+              class="button"
+              title="Rotate By 90 Degree"
+              id="rotate_positive"
+              >↺</label
+            >
+          </div>
+          <input
+            class="button"
+            type="submit"
+            value="Edit"
+            title="Edit Face / Logo"
+          />
+        </form>
+      </div>
+      <div id="password_changer_page" class="page">
+        <form id="change_password_form">
+          <input
+            type="password"
+            name="current_password"
+            title="Enter Current Password"
+            placeholder="Current password"
+            autofocus
+            autocomplete="off"
+          />
+          <br />
+          <input
+            type="password"
+            name="new_password"
+            title="Enter New Password"
+            placeholder="New password"
+            autocomplete="off"
+          />
+          <br />
+          <input
+            type="password"
+            name="retyped_password"
+            title="Re-enter New Password"
+            placeholder="Re-enter new password"
+            autocomplete="off"
+          />
+          <br />
+          <input
+            type="submit"
+            class="button"
+            id="password_change_submit"
+            title="Change Password"
+            value="Change Password"
+          />
+        </form>
+      </div>
+      <div id="reactions_page" class="page dynamic"></div>
+      <div id="log_in_sessions_page" class="page dynamic"></div>
+      <div id="rules_page" class="page dynamic"></div>
+      <div id="post_page" class="page dynamic"></div>
+    </div>
+    <div id="printing_alert">
+      Printing any portion of TeleChirkut is forbidden!
+    </div>
+    <script
+      nonce="__SADEED_NONCE__"
+      src="/?javascript=__SADEED_TIME__"
+    ></script>
+  </body>
+</html>

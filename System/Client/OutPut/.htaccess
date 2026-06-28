@@ -1,0 +1,12 @@
+# By Abdullah As-Sadeed
+
+RewriteEngine On
+
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteRule ^rules$ /\?public\=rules [L]
+
+RewriteRule ^registration$ /\?public\=registration [L]
+
+RewriteRule ^sitemap\.xml$ /\?sitemap [L]
