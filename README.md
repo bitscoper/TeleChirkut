@@ -18,7 +18,7 @@ A Social Network, Built from Scratch, for a Better World
 - I commit multiple changes in a single commit.
 - I write commit messages in Title Case and past tense, leaving out articles to keep them concise while still showing details.
 - I previously reuploaded the repository to clean up the commit history and later deleted some commits.
-- I later PGP-signed all my commits, so they show later dates.
+- I later [PGP](https://github.com/bitscoper/bitscoper#pgp-public-key)-signed all my commits, so they show later dates.
 - The [server](https://telechirkut.bitscoper.dev/) is offline since the project is archived.
 - Delivery through [Microsoft Store](https://apps.microsoft.com/detail/9P8VZN45VV94) is paused since the project is archived.
 - Submission to [Google Play](https://play.google.com/store/apps/details?id=xyz.telechirkut.pwa) is paused because I no longer own the account.
