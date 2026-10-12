@@ -4,10 +4,10 @@
 
 function Sanitize_String($string)
 {
-  $connection = $GLOBALS["connection"];
+    $connection = $GLOBALS["connection"];
 
-  $string = pg_escape_string($connection, $string);
-  $string = trim($string);
+    $string = pg_escape_string($connection, $string);
+    $string = trim($string);
 
-  return $string;
+    return $string;
 }

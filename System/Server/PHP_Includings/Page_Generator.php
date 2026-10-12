@@ -3,21 +3,21 @@
 /* By Abdullah As-Sadeed */
 
 function Generate_Page(
-  $title,
-  $description,
-  $additional_css,
-  $if_fixed_body,
-  $if_public_header,
-  $body,
+    $title,
+    $description,
+    $additional_css,
+    $if_fixed_body,
+    $if_public_header,
+    $body
 ) {
-  $includings_path = $GLOBALS["includings_path"];
-  $javascript_nonce = $GLOBALS["javascript_nonce"];
+    $includings_path = $GLOBALS["includings_path"];
+    $javascript_nonce = $GLOBALS["javascript_nonce"];
 
-  require_once $includings_path . "Manually_Required/CSS_Bundler.php";
-  require_once $includings_path . "Manually_Required/XHTML_Minifier.php";
+    require_once $includings_path . "Manually_Required/CSS_Bundler.php";
+    require_once $includings_path . "Manually_Required/XHTML_Minifier.php";
 
-  $page =
-    '<!DOCTYPE html>
+    $page =
+        '<!DOCTYPE html>
 <!-- By Abdullah As-Sadeed -->
 <html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -31,24 +31,24 @@ function Generate_Page(
 <link rel="apple-touch-icon" href="Client_Includings/TeleChirkut_192.png" />
 <meta name="keywords" content="TeleChirkut, Social, Network, Media, Medium, Telecommunication, Conversation, Messaging, Messenger"/>
 <title>' .
-    $title .
-    '</title>
+        $title .
+        '</title>
 <meta name="description" content="' .
-    $description .
-    '"/>
+        $description .
+        '"/>
 <meta name="keywords" content="TeleChirkut"/>
 <style>' .
-    Bundle_CSS() .
-    $additional_css .
-    '</style>
+        Bundle_CSS() .
+        $additional_css .
+        '</style>
 </head>
 <body lang="en-US"';
 
-  if ($if_fixed_body) {
-    $page .= ' class="fixed_body"';
-  }
+    if ($if_fixed_body) {
+        $page .= ' class="fixed_body"';
+    }
 
-  $page .= '>
+    $page .= '>
 <div id="initialization_container">
     <div id="initialization">
         <img
@@ -60,27 +60,27 @@ function Generate_Page(
 </div>
 <div id="container">';
 
-  if ($if_public_header) {
-    $page .= '<div id="header">
+    if ($if_public_header) {
+        $page .= '<div id="header">
         <h3 id="unregistered_header_title">TeleChirkut</h3>
 <a href="/" title="Home" target="_self" id="unregistered_header_link">Home</a>
 </div>';
-  }
+    }
 
-  $page .= $body;
+    $page .= $body;
 
-  $page .=
-    '</div>
+    $page .=
+        '</div>
 <div id="printing_alert">Printing any portion of TeleChirkut is forbidden!</div>
 <script nonce="' .
-    $javascript_nonce .
-    '" src="/?javascript=' .
-    time() .
-    '"></script>
+        $javascript_nonce .
+        '" src="/?javascript=' .
+        time() .
+        '"></script>
 </body>
 </html>';
 
-  $page = Minify_XHTML($page);
+    $page = Minify_XHTML($page);
 
-  return $page;
+    return $page;
 }

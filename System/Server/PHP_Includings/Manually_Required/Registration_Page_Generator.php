@@ -4,16 +4,16 @@
 
 function Generate_Registration_Page()
 {
-  $includings_path = $GLOBALS["includings_path"];
-  require_once $includings_path .
-    "Manually_Required/TimeZone_Select_Generator.php";
+    $includings_path = $GLOBALS["includings_path"];
+    require_once $includings_path .
+        "Manually_Required/TimeZone_Select_Generator.php";
 
-  $additional_css = 'body {
+    $additional_css = 'body {
 background-color: var(--back-light);
 }';
 
-  $body =
-    '<div id="sub_header">
+    $body =
+        '<div id="sub_header">
 <h4>Register and Be Connected</h4>
 </div>
 <form id="registration_form" id="registration_form">
@@ -23,8 +23,8 @@ background-color: var(--back-light);
 </span>
 <span class="field">
 <span class="field_heading">Timezone</span>' .
-    Generate_TimeZone_Select() .
-    '</span>
+        Generate_TimeZone_Select() .
+        '</span>
 <span class="field">
 <span class="field_heading" id="face_logo_heading">Snap of face</span>
 <input type="file" accept="image/*" name="face_logo" id="registration_image_selector"/>
@@ -57,12 +57,12 @@ You are agreeing to the <a href="rules" title="Read the TeleChirkut Rules" targe
 <input type="submit" value="Register" title="Register" class="button"/>
 </form>';
 
-  return Generate_Page(
-    "Registration - TeleChirkut",
-    "Register on TeleChirkut and be connected",
-    $additional_css,
-    false,
-    true,
-    $body,
-  );
+    return Generate_Page(
+        "Registration - TeleChirkut",
+        "Register on TeleChirkut and be connected",
+        $additional_css,
+        false,
+        true,
+        $body
+    );
 }

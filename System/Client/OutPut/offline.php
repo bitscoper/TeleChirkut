@@ -1,8 +1,8 @@
 <?php
 /* By Abdullah As-Sadeed */
 
-$includings_path = '../../Server/PHP_Includings/';
-require_once $includings_path . 'Manually_Required/CSS_Bundler.php';
+$includings_path = "../../Server/PHP_Includings/";
+require_once $includings_path . "Manually_Required/CSS_Bundler.php";
 ?>
 <!DOCTYPE html>
 <!-- By Abdullah As-Sadeed -->
@@ -17,9 +17,7 @@ require_once $includings_path . 'Manually_Required/CSS_Bundler.php';
     <meta name="theme-color" content="rgb(66, 66, 66)" />
     <link rel="apple-touch-icon" href="Client_Includings/TeleChirkut_192.png" />
     <style>
-        <?php
-        echo Bundle_CSS();
-        ?>
+        <?php echo Bundle_CSS(); ?>
     </style>
     <title>Offline - TeleChirkut</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -54,6 +52,5 @@ require_once $includings_path . 'Manually_Required/CSS_Bundler.php';
 </body>
 
 </html>
-<?php
-exit();
+<?php exit();
 ?>

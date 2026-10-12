@@ -4,18 +4,18 @@
 
 function Report_Post($reported_post_serial)
 {
-  $connection = $GLOBALS["connection"];
-  $my_profile_code = $GLOBALS["my_profile_code"];
+    $connection = $GLOBALS["connection"];
+    $my_profile_code = $GLOBALS["my_profile_code"];
 
-  $at = time();
+    $at = time();
 
-  pg_query(
-    $connection,
-    "INSERT INTO reported_posts(from_profile_code, reported_post_serial, at) VALUES('$my_profile_code', '$reported_post_serial', '$at');",
-  );
+    pg_query(
+        $connection,
+        "INSERT INTO reported_posts(from_profile_code, reported_post_serial, at) VALUES('$my_profile_code', '$reported_post_serial', '$at');"
+    );
 
-  $array = ["status" => "Reported"];
-  $json = json_encode($array);
+    $array = ["status" => "Reported"];
+    $json = json_encode($array);
 
-  return $json;
+    return $json;
 }
